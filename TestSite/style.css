@@ -12,9 +12,9 @@ DIV {
 #Header {
 	height: 100px;
 	width: 800px;
-	margin-right: auto;
+	margin-right: auto ;
 	margin-left: auto;
-	background: url(images/banner.png) no repeat;
+	background: url(images/banner.png) no-repeat;
 }
 
 #MainContent {
