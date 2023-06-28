@@ -133,6 +133,38 @@
       background-color: #E91E63;
     }
 	
+	 .listen-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 9px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .button-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+  }
+  
+  .btn-circle {
+  border-radius: 50%;
+}
+
+.btn-circle i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+
+.sharebutton-image {
+  width: 30px;
+  height: 30px;
+}
 	
 
 	</style>
@@ -159,7 +191,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+            Content List
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#whatisbullying">What is Bullying?</a></li>
@@ -196,10 +228,10 @@
 	
 	<!-- LEFT COLUMN STARTS -->
 
-		<div class="col-2">
+		<div class="col-2 d-none d-md-block">
 		
 		<!-- CONTENT LIST STARTS -->
-<div class="list-group list-group-flush">
+<div class="list-group list-group-flush" style= margin-top:10px;>
   <a href="#whatisbullying" class="list-group-item" aria-current="true">
     What is Bullying?
   </a>
@@ -219,35 +251,78 @@
 	<!-- MIDDLE COLUMN STARTS -->
 
 
-		<div class="col-8">
+		<div class="col-12 col-md-8 text-center">
+		
+		<div class="container" style= margin-top:10px;>
+			<div class="row">
+			
+			<div class="col-4">
+
+
+		<!-- LISTEN BUTTON STARTS -->
+
+	<button onclick="playAudio()" class="listen-button">
+  <img src="images/listenicon.png" alt="Play" class="button-icon">
+  Listen
+</button>
+<audio id="audioPlayer" src="images/hellomrjones.m4a"></audio>
+
+<script>
+  function playAudio() {
+    var audio = document.getElementById('audioPlayer');
+    audio.play();
+  }
+</script>
+  		<!-- LISTEN BUTTON ENDS -->
+</div>
+
+	<div class="col-8">
+
+<!-- Share buttons -->
+<div class="share-buttons">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://tempehs.github.io/2023IST-Website-Jaiden.Wu/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-circle">
+    <img src="images/facebooklogo.png" alt="Facebook" class="sharebutton-image">
+  </a>
+  <a href="https://twitter.com/intent/tweet?url=https://tempehs.github.io/2023IST-Website-Jaiden.Wu/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-circle">
+    <img src="images/twitterlogo.png" alt="Twitter" class="sharebutton-image">
+  </a>
+  <a href="https://www.linkedin.com/shareArticle?url=https://tempehs.github.io/2023IST-Website-Jaiden.Wu/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-circle">
+    <img src="images/linkedinlogo.png" alt="LinkedIn" class="sharebutton-image">
+  </a>
+</div>
+
+
+  </div>	
+</div>	
+</div>
 		
 		<div id="whatisbullying"> </div>
-		<h1> What is Bullying? </h1> 
+		<h1 style= margin-top:50px;> What is Bullying? </h1> 
 		
-		<img src="images/children 11.png" class="img-fluid" alt="...">
+		<img src="images/children 11.png" class="img-fluid" alt="..." style= margin-top:20px;">
 		
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+		<p style= margin-top:50px;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 
 
 		<div id="typesofbullying"> </div>
-		<h1> Types of Bullying </h1> 
+		<h1 style= margin-top:50px;> Types of Bullying </h1> 
 		
-		<iframe width="100%" height="520" src="https://www.youtube.com/embed/w6FfxnhRssw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<iframe style= margin-top:20px; width="100%" height="520" src="https://www.youtube.com/embed/w6FfxnhRssw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p style= margin-top:50px;> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		
 		
 		<div id="whydokidsbully"> </div>
-		<h1> Why Do Kids Bully? </h1> 
+		<h1 style= margin-top:50px;> Why Do Kids Bully? </h1> 
 		
-		<img src="images/children 12.png class="img-fluid" alt="...">
+		<img src="images/children 12.png" class="img-fluid" alt="..." style= margin-top:20px;>
 		
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p style= margin-top:50px; >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		
 		
 		<!-- ACCORDION STARTS HERE -->
-			<div class="container">
-    <div class="accordion accordion-flush" id="accordionFlushExample">
+			<div class="container" style= margin-top:50px;>
+    <div class="accordion accordion-flush" id="accordionFlushExample" >
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -265,15 +340,15 @@
 		<!-- ACCORDION ENDS HERE -->
 
 		<div id="effectsofbullying"> </div>
-		<h1> Effects of Bullying </h1> 
+		<h1 style= margin-top:50px;> Effects of Bullying </h1> 
 		
-		<img src="images/children 13.png" class="img-fluid" alt="...">
+		<img src="images/children 13.png" class="img-fluid" alt="..." style= margin-top:20px;>
 		
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p style= margin-top:50px;>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		
 		
 		<!-- MODAL STARTS HERE -->
-		<div class="container">
+		<div class="container" style= margin-top:50px;>
     <div class="speech-bubble">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus, justo vitae sodales eleifend, lectus leo tincidunt ligula, sed iaculis mauris ligula eu est.</p>
      <button type="button" class="btn1 btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -308,19 +383,19 @@
 		
 		
 		<div id="whatcanyoudo"> </div>
-		<h1> What Can You Do </h1> 
+		<h1 style= margin-top:50px;> What Can You Do </h1> 
 		
-		<img src="images/children 14.png" class="img-fluid" alt="...">
+		<img src="images/children 14.png" class="img-fluid" alt="..." style= margin-top:20px;>
 		
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p style= margin-top:50px;>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		
 		
 		<div id="card"> </div>
-		<h1> Other Support Services </h1> 
+		<h1 style= margin-top:50px;> Other Support Services </h1> 
 
 		<!-- CARD WITH OTHER SERVICES STARTS HERE -->
-<div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col">
+<div class="row row-cols-1 row-cols-md-3 g-4" style= margin-top:20px;>
+  <div class="col" >
     <div class="card h-100">
       <img src="https://emrearal.com/wp-content/uploads/2017/12/kidshelpline-oldlogo.gif" class="card-img-top"  class="img-fluid" alt="...">
       <div class="card-body">
@@ -373,7 +448,7 @@
 
 	<!-- RIGHT COLUMN STARTS -->
 
-		<div class="col-2">
+		<div class="col-2 d-none d-md-block" style= margin-top:10px;>
 		
 		<!-- CARD RIGHT STARTS HERE -->
 
