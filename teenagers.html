@@ -22,13 +22,31 @@
   <body>
     
 	<style> 
+	@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+	
+	body {
+      font-family: 'Outfit', sans-serif;
+    }
+
+    h1  {
+		font-family: 'Inter', sans-serif;
+		
+    }
+	
+	  h5 {
+		font-family: 'Inter', sans-serif;
+    }
 	
 	.navbar-brand img {height:130px}
 	
+	
+
 	.footer-basic {
   padding:40px 0;
-  background-color: #ffffffff;
+  background-color: #FFFFFFFFF;
   color:#4b4c4d;
+  margin-top:20px;
 }
 
 .footer-basic ul {
@@ -84,9 +102,9 @@
   color:#aaa;
   margin-bottom:0;
 }
+
    .accordion-item {
       margin-bottom: 20px;
-      border: none;
       background-color: #f8f9fa;
       border-radius: 8px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -108,7 +126,7 @@
 
   .speech-bubble {
       position: relative;
-      background-color: #F8BBD0;
+      background-color: #f29040;
       border-radius: 10px;
       padding: 20px;
       margin-bottom: 20px;
@@ -119,7 +137,7 @@
     }
 
     .btn1 {
-      background-color: #FF4081;
+      background-color: #070303;
       color: #fff;
       border: none;
       padding: 10px 20px;
@@ -134,7 +152,7 @@
     }
 	
 	 .listen-button {
-    background-color: #007bff;
+    background-color: #f29040;
     color: #fff;
     padding: 9px;
     border-radius: 20px;
@@ -151,21 +169,32 @@
   
   .btn-circle {
   border-radius: 50%;
+  background-color: #f29040;
 }
 
-.btn-circle i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
+.btn-circle:hover {
+  background-color: #FFFFFF;
 }
 
 .sharebutton-image {
   width: 30px;
   height: 30px;
 }
-	
+
+  .list-group {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  .list-group a {
+    color: #212529;
+    padding: 10px 20px;
+  }
+
+  .list-group a:hover {
+    background-color: #e9ecef;
+  }
 
 	</style>
 	
@@ -208,10 +237,10 @@
           </ul>
         </li>
       </ul>
-      <form class="d-flex" role="search" id="search-form">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+		<a href="search.html">
+		<button class="btn btn-outline-success">Search</button>
+		</a>
+
     </div>
   </div>
 </nav>
@@ -231,7 +260,7 @@
 		<div class="col-2 d-none d-md-block">
 		
 		<!-- CONTENT LIST STARTS -->
-<div class="list-group list-group-flush" style= margin-top:10px;>
+<div class="list-group list-group-flush">
   <a href="#whatisbullying" class="list-group-item" aria-current="true">
     What is Bullying?
   </a>
@@ -281,13 +310,13 @@
 <!-- Share buttons -->
 <div class="share-buttons">
   <a href="https://www.facebook.com/sharer/sharer.php?u=https://tempehs.github.io/2023IST-Website-Jaiden.Wu/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-circle">
-    <img src="images/facebooklogo.png" alt="Facebook" class="sharebutton-image">
+    <img src="images/facebooklogo1.png" alt="Facebook" class="sharebutton-image">
   </a>
   <a href="https://twitter.com/intent/tweet?url=https://tempehs.github.io/2023IST-Website-Jaiden.Wu/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-circle">
     <img src="images/twitterlogo.png" alt="Twitter" class="sharebutton-image">
   </a>
   <a href="https://www.linkedin.com/shareArticle?url=https://tempehs.github.io/2023IST-Website-Jaiden.Wu/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-circle">
-    <img src="images/linkedinlogo.png" alt="LinkedIn" class="sharebutton-image">
+    <img src="images/linkedinlogo1.png" alt="LinkedIn" class="sharebutton-image">
   </a>
 </div>
 
@@ -326,12 +355,13 @@
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            Accordion Item #1
+            More Info
           </button>
         </h2>
         <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">
-            Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+Lorem ipsum dolor sit amet. Ut voluptate sint in repellendus quidem est voluptas exercitationem! Id saepe repellendus ut possimus nemo aut dolore aspernatur vel odio expedita aut veniam sint. Eum deleniti laboriosam qui autem illo ea sunt consequatur.
+
           </div>
         </div>
       </div>
@@ -352,18 +382,17 @@
     <div class="speech-bubble">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus, justo vitae sodales eleifend, lectus leo tincidunt ligula, sed iaculis mauris ligula eu est.</p>
      <button type="button" class="btn1 btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
- CLICK HERE !!!!
+ Story of Jess
 </button>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
       
         <div class="modal-header">
-          <h1 class="modal-title"> Title </h1>
+          <h1 class="modal-title"> Story of Jess </h1>
         </div>
         
         <div class="modal-body">
-          <h3>Some text to enable scrolling..</h3>
           <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
@@ -379,7 +408,7 @@
   </div>
     </div>
 		</div>
-		<!-- MODAL STARTS HERE -->
+		<!-- MODAL ENDS HERE -->
 		
 		
 		<div id="whatcanyoudo"> </div>
@@ -421,10 +450,15 @@
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="images/bully-resources.png" class="card-img-top" alt="...">
+      <img src="images/bullyresources.png" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">The Bully Project</h5>
-        <p class="card-text">The BULLY Project Australia is a not for profit project initiated by Shark Island Institute and The Caledonia Foundation. They aim to cause a tipping point in society where bullying is no longer accepted and UPSTANDERS prevail bringing an end to bullying in Australia.</p>
+        <p class="card-text">The BULLY Project Australia, led by the Shark Island Institute and The Caledonia Foundation, strives to eradicate bullying in Australia. Their goal is to create a society where bullying is no longer tolerated and UPSTANDERS prevail.
+
+
+
+
+</p>
       </div>
       <div class="card-footer">
          <a href="https://thebullyproject.com.au/" target="_blank" class="card-link"> Link to Website </a>
@@ -450,31 +484,23 @@
 
 		<div class="col-2 d-none d-md-block" style= margin-top:10px;>
 		
-		<!-- CARD RIGHT STARTS HERE -->
+	
+	 <div class="accordion accordion-flush" id="accordionFlushExample" >
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+		  More Info
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>Lorem ipsum dolor sit amet. Aut porro iusto non animi rerum aut nemo vitae ex reiciendis nulla. Sed velit earum est itaque modi ut odit consequatur hic veritatis minima qui praesentium quaerat. Aut incidunt perferendis sed incidunt incidunt sed deserunt Quis. </p><p>Qui voluptatum architecto in voluptatem aspernatur vel velit dolores aut optio molestiae non dicta iusto sed quae alias. Aut omnis magni eos excepturi autem vel aperiam dolor qui tempora quisquam sit facilis suscipit. Quo repellat nihil et impedit minima ut assumenda reiciendis. </p><p>Id ratione dolorum et maiores mollit </p>
 
-		<div class="card border-warning" style="width: fluid;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <p class="card-text">Lorem ipsum dolor sit amet. Et excepturi laborum ea rerum odit est galisum voluptatibus qui omnis tempora eum </p>
-  </div>
-</div>
-		<!-- CARD RIGHT ENDS HERE -->
-		
-		
-		
-	<div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-        Accordion Item #1
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the 
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+	</div>
 
 
 
@@ -487,14 +513,14 @@
 
 
 <!-- MAIN BODY ENDS HERE -->
-
+     
+	 <hr class="my-4">
  <div class="footer-basic">
         <footer>
-            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Home</a></li>
-                <li class="list-inline-item"><a href="#">About</a></li>
-                <li class="list-inline-item"><a href="#">Contact Us</a></li>
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="about.html">About</a></li>
+                <li class="list-inline-item"><a href="contact us.html">Contact Us</a></li>
             </ul>
             <p class="copyright">HealthForYou © 2023</p>
         </footer>
