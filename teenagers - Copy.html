@@ -170,11 +170,10 @@
 	</style>
 	
 	
-	<!-- NAVBAR STARTS HERE -->
-	
-	<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color:#efc983;">
+<!-- NAVBAR STARTS HERE -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color:#efc983;">
   <div class="container">
-    <a class="navbar-brand" href="#"><IMG src="images/IST LOGO.png" /></a>
+    <a class="navbar-brand" href="#"><img src="images/IST LOGO.png" alt="Logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -186,38 +185,40 @@
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
-		 <li class="nav-item">
+        <li class="nav-item">
           <a class="nav-link" href="contact us.html">Contact Us</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Content List
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#whatisbullying">What is Bullying?</a></li>
-			<li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#typesofbullying">Types Of Bullying</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#whydokidsbully">Why Do Kids Bully?</a></li>
-			<li><hr class="dropdown-divider"></li>
-			<li><a class="dropdown-item" href="#effectsofbullying">Effects Of Bullying</a></li>
-			<li><hr class="dropdown-divider"></li>
-			<li><a class="dropdown-item" href="#whatcanyoudo">What Can You Do?</a></li>
-			<li><hr class="dropdown-divider"></li>
-			<li><a class="dropdown-item" href="#card">Other Support Services</a></li>
-          </ul>
-        </li>
       </ul>
-      <form class="d-flex" role="search" id="search-form">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+      <form class="d-flex" role="search">
+        <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button id="searchButton" class="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
   </div>
 </nav>
-	
 
-	<!-- NAVBAR ENDS HERE -->
+<!-- JavaScript code -->
+<script>
+  document.getElementById('searchButton').addEventListener('click', function(event) {
+    event.preventDefault();
+    var searchTerm = document.getElementById('searchInput').value;
+    searchContent(searchTerm);
+    document.getElementById('searchInput').value = '';
+  });
+
+  function searchContent(searchTerm) {
+    var allContent = document.querySelectorAll('.content'); // Change '.content' to the CSS class or selector for your website's content elements
+    allContent.forEach(function(content) {
+      var text = content.textContent || content.innerText;
+      if (text.toLowerCase().includes(searchTerm.toLowerCase())) {
+        content.style.display = 'block'; // Show the content if it matches the search term
+      } else {
+        content.style.display = 'none'; // Hide the content if it doesn't match the search term
+      }
+    });
+  }
+</script>
+
 
 
 	
@@ -298,11 +299,11 @@
 		
 		<div id="whatisbullying"> </div>
 		<h1 style= margin-top:50px;> What is Bullying? </h1> 
-		
+		<div class="content">		
 		<img src="images/children 11.png" class="img-fluid" alt="..." style= margin-top:20px;">
 		
 		<p style= margin-top:50px;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-
+		</div>
 
 		<div id="typesofbullying"> </div>
 		<h1 style= margin-top:50px;> Types of Bullying </h1> 
