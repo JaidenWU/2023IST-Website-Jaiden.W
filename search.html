@@ -26,17 +26,21 @@
 
     h2 {
 		font-family: 'Inter', sans-serif;
+		font-size: 45px;
+		margin-top: 20px
+		margin-bottom:30px
     }
 	
 #searchbar {
 padding: 15px;
 border-radius: 10px;
-width: 100%; /* Adjust the width as desired */
-height: 60px; /* Adjust the height as desired */
-font-size: 16px; /* Adjust the font size as desired */
-padding: 10px; /* Adjust the padding as desired */
-border-radius: 8px; /* Adjust the border radius as desired */
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow if desired */
+width: 100%; 
+height: 60px; 
+font-size: 16px; 
+padding: 10px; 
+border-radius: 8px; 
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+margin-top:15px
 }
 
 .navbar-brand img {
@@ -70,7 +74,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow if desired 
   padding:40px 0;
   background-color: #FFFFFFFFF;
   color:#4b4c4d;
-  margin-top:20px;
+  margin-top:10px;
 }
 
 .footer-basic ul {
@@ -126,8 +130,13 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow if desired 
   color:#aaa;
   margin-bottom:0;
 }
+  
+  .no-link {
+            user-select: none;
+			pointer-events: none;
+			color:#FFFFF
 
-
+        }
 
     </style>
 
@@ -167,7 +176,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow if desired 
 <body>
     <!-- SEARCH BAR -->
 
- <div class="container allButFooter">
+ <div class="container">
         <div class="row">
 		    <input id="searchbar" onkeyup="search()" type="text" name="search" placeholder="Search">
 			</div>
@@ -175,7 +184,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow if desired 
  <div class="container">
   <div class="row">
     <div class="col-md-6 column">
-      <h2 style="font-size: 45px;">Parents</h2>
+      <h2>Parents</h2>
       <ol class="search-list">
         <li class="searching"><a href="parents.html#whatisbullying" style="text-decoration: none;">What is Bullying?</a></li>
         <li class="searching"><a href="parents.html#whatarethesignsofbullying" style="text-decoration: none;">What Are the Signs of Bullying</a></li>
@@ -185,7 +194,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow if desired 
       </ol>
     </div>
     <div class="col-md-6 column">
-      <h2 style="font-size: 45px;">Teenagers</h2>
+      <h2>Teenagers</h2>
       <ol class="search-list">
         <li class="searching"><a href="teenagers.html#whatisbullying" style="text-decoration: none;">What is Bullying?</a></li>
         <li class="searching"> <a href="teenagers.html#typesofbullying" style="text-decoration: none;"> Types of Bullying</li>
@@ -198,6 +207,23 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow if desired 
 </div>
 
 
+
+
+   
+    <hr class="no-link" style="margin-top: 50px" aria-disabled="true"> </hr>
+ <div class="footer-basic">
+        <footer>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="about.html">About</a></li>
+                <li class="list-inline-item"><a href="contact us.html">Contact Us</a></li>
+            </ul>
+            <p class="copyright">HealthForYou © 2023</p>
+        </footer>
+    </div>
+
+
+</div>
 
     <script>
         function search() {
@@ -214,21 +240,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow if desired 
             }
         }
    </script>
-   
-   <hr>
- <div class="footer-basic">
-        <footer>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="index.html">Home</a></li>
-                <li class="list-inline-item"><a href="about.html">About</a></li>
-                <li class="list-inline-item"><a href="contact us.html">Contact Us</a></li>
-            </ul>
-            <p class="copyright">HealthForYou © 2023</p>
-        </footer>
-    </div>
 
-
-</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
